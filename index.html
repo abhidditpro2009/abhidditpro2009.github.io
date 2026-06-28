@@ -63,8 +63,17 @@
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--fg2);font-family:var(--font-s);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:'';position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:9998;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+[data-theme="light"] body::after{opacity:.02}
+[data-theme="matrix"] body::after{opacity:.015}
 ::selection{background:var(--clay-s);color:var(--clay-g)}
 
+
+/* â”€â”€ Section gradient accents â”€â”€ */
+#experience::before{content:'';position:absolute;top:-100px;right:-150px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--clay) 6%,transparent),transparent 70%);pointer-events:none;z-index:0}
+#experience{position:relative}
+#testimonials::before{content:'';position:absolute;top:-80px;left:-120px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--clay) 5%,transparent),transparent 70%);pointer-events:none;z-index:0}
+#testimonials{position:relative}
 
 /* â”€â”€ Animations â”€â”€ */
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
@@ -468,13 +477,15 @@ footer{border-top:1px solid var(--line);padding:24px var(--g);display:flex;align
   <div class="hero-glow"></div>
   <p class="h-eye rv">13+ Years Â· Staff Â· Principal Engineer</p>
   <h1 class="h-h1 rv d1">
-    Seasoned engineer who <span class="it">architects</span><br>
-    systems that outlast the sprint.
+    13 years of building<br>
+    systems that <span class="it">scale.</span>
   </h1>
+  <p style="font-family:var(--font-m);font-size:13px;letter-spacing:.06em;color:var(--clay);margin-bottom:24px" class="rv d1">Systems Â· Backend Â· Frontend Â· DevOps Â· Observability Â· Performance Â· Architecture</p>
   <p class="h-sub rv d2">
-    13+ years designing scalable, distributed, event-driven systems for enterprise cloud.
-    From kernel level encryption at Symantec to 1000 RPS GraphQL APIs at Wayfair.
-    Building systems that hold up under real world load.
+    13 years building up the stack. Started at kernel drivers and UEFI in C++.
+    Grew into Java backends and Angular frontends. Now building reactive, event driven
+    systems delivering 1000 RPS on Spring Webflux and Kafka at Wayfair.
+    Delivered systems that handle real world load at enterprise scale.
   </p>
   <div class="h-acts rv d3">
     <a class="bp" href="#experience">See my experience</a>
