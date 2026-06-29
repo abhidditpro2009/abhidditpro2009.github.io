@@ -207,7 +207,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .h-eye{font-family:var(--font-m);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:20px}
 .h-h1{font-family:var(--font-d);font-weight:400;font-size:clamp(46px,6.5vw,86px);line-height:1.03;letter-spacing:-.025em;color:var(--fg);margin-bottom:30px;max-width:880px}
 .h-h1 .it{font-style:italic;color:var(--clay)}
-.h-sub{font-size:18px;line-height:1.65;color:var(--fg3);max-width:600px;margin-bottom:38px}
+.h-sub{font-size:18px;line-height:1.65;color:var(--fg3);max-width:760px;margin-bottom:38px;text-align:justify;hyphens:auto}
 .h-acts{display:flex;gap:14px;flex-wrap:wrap}
 .bp{display:inline-flex;align-items:center;gap:8px;background:var(--clay);color:#FBF8F3;font-size:15px;font-weight:600;text-decoration:none;padding:14px 26px;border-radius:8px;transition:background 120ms,transform 120ms}
 .bp:hover{background:var(--clay-h);transform:translateY(-1px)}
@@ -263,7 +263,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .card-span{grid-column:1/-1}
 .c-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
 .c-name{font-size:17px;font-weight:700;color:var(--fg);margin-bottom:7px;letter-spacing:-.01em}
-.c-desc{font-size:13px;line-height:1.6;color:var(--fg3)}
+.c-desc{font-size:13px;line-height:1.6;color:var(--fg3);text-align:justify;hyphens:auto}
 .c-stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
 .c-stack span{font-family:var(--font-m);font-size:10px;color:var(--fg4);letter-spacing:.04em}
 
@@ -294,7 +294,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .evo-content{flex:1}
 .evo-year{font-family:var(--font-m);font-size:11px;color:var(--fg4);letter-spacing:.06em;margin-bottom:4px}
 .evo-co{font-size:16px;font-weight:700;color:var(--fg);margin-bottom:6px}
-.evo-narrative{font-size:13px;line-height:1.6;color:var(--fg3)}
+.evo-narrative{font-size:13px;line-height:1.6;color:var(--fg3);text-align:justify;hyphens:auto}
 .evo-skills{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .evo-skill{font-family:var(--font-m);font-size:10px;padding:3px 8px;border-radius:4px;background:var(--bg2);color:var(--fg3);border:1px solid var(--line)}
 .evo-skill.new{background:var(--clay-s);color:var(--clay-g);border-color:color-mix(in srgb,var(--clay) 25%,transparent)}
@@ -309,7 +309,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .vp::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--clay);opacity:.6}
 .vp-num{font-family:var(--font-d);font-size:48px;color:var(--fg);opacity:.12;position:absolute;top:10px;right:16px;line-height:1}
 .vp-title{font-size:16px;font-weight:700;color:var(--fg);margin-bottom:8px}
-.vp-desc{font-size:13px;line-height:1.6;color:var(--fg3)}
+.vp-desc{font-size:13px;line-height:1.6;color:var(--fg3);text-align:justify;hyphens:auto}
 
 /* ── Education ── */
 .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px}
@@ -320,7 +320,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 
 /* ── About ── */
 .ab-grid{display:grid;grid-template-columns:3fr 2fr;gap:48px;margin-top:48px}
-.ab-body{font-size:16px;line-height:1.75;color:var(--fg3)}
+.ab-body{font-size:16px;line-height:1.75;color:var(--fg3);text-align:justify;hyphens:auto}
 .ab-body p+p{margin-top:14px}
 .ab-body strong{color:var(--fg);font-weight:600}
 .ab-facts{display:flex;flex-direction:column;gap:12px}
@@ -335,7 +335,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .ct-body{flex:1;position:relative;z-index:1}
 .ct-h{font-family:var(--font-d);font-weight:400;font-size:clamp(30px,3.5vw,48px);line-height:1.08;letter-spacing:-.02em;color:var(--fg);margin-bottom:14px}
 .ct-h .it{font-style:italic;color:var(--clay)}
-.ct-sub{font-size:15px;color:var(--fg3);margin-bottom:26px;line-height:1.6}
+.ct-sub{font-size:15px;color:var(--fg3);margin-bottom:26px;line-height:1.6;text-align:justify;hyphens:auto}
 .ct-deco{font-family:var(--font-d);font-size:130px;line-height:1;color:var(--clay);opacity:.07;user-select:none;flex-shrink:0}
 
 /* ── Company logos ── */
@@ -363,7 +363,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .blog-card:hover{border-color:var(--line2);transform:translateY(-2px)}
 .blog-cat{font-family:var(--font-m);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--clay);margin-bottom:10px}
 .blog-title{font-size:16px;font-weight:700;color:var(--fg);margin-bottom:8px;line-height:1.3}
-.blog-desc{font-size:13px;line-height:1.55;color:var(--fg3)}
+.blog-desc{font-size:13px;line-height:1.55;color:var(--fg3);text-align:justify;hyphens:auto}
 .blog-date{font-family:var(--font-m);font-size:11px;color:var(--fg4);margin-top:14px;letter-spacing:.04em}
 
 /* ── Terminal hero ── */
